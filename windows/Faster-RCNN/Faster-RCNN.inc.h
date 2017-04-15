@@ -1,4 +1,7 @@
-#pragma once
+//Implemented by Feng Wang, UESTC
+//Some codes copied from https://github.com/YihangLou/FasterRCNN-Encapsulation-Cplusplus
+#ifndef FASTER_RCNN_H
+#define FASTER_RCNN_H
 #include <fstream>
 #include <thread>
 #include <opencv2\opencv.hpp>
@@ -149,3 +152,4 @@ namespace Feng {
     }
   };
 }
+#endif
