@@ -6,7 +6,6 @@
 #include <thread>
 #include <opencv2\opencv.hpp>
 #include <opencv2\cudaimgproc.hpp>
-#include <boost/shared_ptr.hpp>
 #include "CaffeBinding.h"
 #include "nms\gpu_nms.hpp"
 
