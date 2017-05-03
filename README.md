@@ -49,7 +49,6 @@ If you find Faster R-CNN useful in your research, please consider citing:
 ### Requirements: software
 
 1. Requirements for `Caffe` and `pycaffe`. Follow https://github.com/happynear/caffe-windows/#windows-setup to setup Caffe and PyCaffe.
-
 **This repository only support Visual Studio 2015.**
 
 2. Python packages you might not have: `cython`, `python-opencv`, `easydict`
