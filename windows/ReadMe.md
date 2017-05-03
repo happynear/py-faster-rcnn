@@ -11,4 +11,5 @@ My Caffe windows version (https://github.com/happynear/caffe-windows).
 
  - Build the DLL project `caffe.binding` in caffe-windows solution.
  - Change include and library folders in **this Faster-RCNN project** to your own folders.
+ - Change the `model_folder` and `image_root` to your own. If you want to use your own prototxt file, please modify it referring to [faster_rcnn_test.pt](https://github.com/happynear/py-faster-rcnn/blob/master/windows/Faster-RCNN/faster_rcnn_test.pt).
  - Build.
