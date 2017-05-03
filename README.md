@@ -50,6 +50,8 @@ If you find Faster R-CNN useful in your research, please consider citing:
 
 1. Requirements for `Caffe` and `pycaffe`. Follow https://github.com/happynear/caffe-windows/#windows-setup to setup Caffe and PyCaffe.
 
+**This repository only support Visual Studio 2015.**
+
 2. Python packages you might not have: `cython`, `python-opencv`, `easydict`
 3. [Optional] MATLAB is required for **official** PASCAL VOC evaluation only. The code now includes unofficial Python evaluation code.
 
@@ -85,7 +87,8 @@ If you find Faster R-CNN useful in your research, please consider citing:
     ```
 
 4. Build Caffe and pycaffe
-    Copy all files from `caffe-windows\Build\x64\Release\pycaffe` to `py-faster-rcnn\caffe-fast-rcnn\python` and replace all files.
+
+    Compile `caffe-windows` using Visual Studio and copy all files from `caffe-windows\Build\x64\Release\pycaffe` to `py-faster-rcnn\caffe-fast-rcnn\python` and replace all files.
 
 5. Download pre-computed Faster R-CNN detectors
     ```Shell
