@@ -9,6 +9,6 @@ My Caffe windows version (https://github.com/happynear/caffe-windows).
 
 # Configuration
 
- - Compile the DLL project `caffe.binding` in caffe-windows solution.
+ - Build the DLL project `caffe.binding` in caffe-windows solution.
  - Change include and library folders in **this Faster-RCNN project** to your own folders.
- - Compile.
+ - Build.
