@@ -48,18 +48,8 @@ If you find Faster R-CNN useful in your research, please consider citing:
 
 ### Requirements: software
 
-1. Requirements for `Caffe` and `pycaffe` (see: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
+1. Requirements for `Caffe` and `pycaffe`. Follow https://github.com/happynear/caffe-windows/#windows-setup to setup Caffe and PyCaffe.
 
-  **Note:** Caffe *must* be built with support for Python layers!
-
-  ```make
-  # In your Makefile.config, make sure to have this line uncommented
-  WITH_PYTHON_LAYER := 1
-  # Unrelatedly, it's also recommended that you use CUDNN
-  USE_CUDNN := 1
-  ```
-
-  You can download my [Makefile.config](https://dl.dropboxusercontent.com/s/6joa55k64xo2h68/Makefile.config?dl=0) for reference.
 2. Python packages you might not have: `cython`, `python-opencv`, `easydict`
 3. [Optional] MATLAB is required for **official** PASCAL VOC evaluation only. The code now includes unofficial Python evaluation code.
 
@@ -90,19 +80,12 @@ If you find Faster R-CNN useful in your research, please consider citing:
 3. Build the Cython modules
     ```Shell
     cd $FRCN_ROOT/lib
-    make
+    python setup.py install
+    python setup_cuda.py install
     ```
 
 4. Build Caffe and pycaffe
-    ```Shell
-    cd $FRCN_ROOT/caffe-fast-rcnn
-    # Now follow the Caffe installation instructions here:
-    #   http://caffe.berkeleyvision.org/installation.html
-
-    # If you're experienced with Caffe and have all of the requirements installed
-    # and your Makefile.config in place, then simply do:
-    make -j8 && make pycaffe
-    ```
+    Copy all files from `caffe-windows\Build\x64\Release\pycaffe` to `py-faster-rcnn\caffe-fast-rcnn\python` and replace all files.
 
 5. Download pre-computed Faster R-CNN detectors
     ```Shell
