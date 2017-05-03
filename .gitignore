@@ -118,3 +118,9 @@ matlab/+caffe/+test/
 packages
 *.db
 *.opendb
+*.ipdb
+*.egg-info
+*.egg
+Debug
+Release
+*.pyd
