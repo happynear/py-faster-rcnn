@@ -5,7 +5,7 @@ and some codes are copied from https://github.com/YihangLou/FasterRCNN-Encapsula
 
 # Requirements
 
-My Caffe windows version https://github.com/happynear/caffe-windows/tree/hog (speed of ms branch may be very slow sometimes, the reason is unclear).
+My Caffe windows version https://github.com/happynear/caffe-windows/tree/ms .
 
 # Configuration
 
